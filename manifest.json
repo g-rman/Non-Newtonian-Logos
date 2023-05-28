@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+    "name": "Non-Newtonian Logos",
+    "version": "1.0",
+
+    "description": "Replaces Newtonian logos with non-Newtonian logos.",
+
+    "icons": {
+        "32": "icons/Non-Newtonian-32.png",
+        "48": "icons/Non-Newtonian-48.png",
+        "96": "icons/Non-Newtonian-96.png"
+    },
+
+    "permissions": [
+        "alarms",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "storage",
+        "unlimitedStorage"
+    ],
+
+    "background": {
+        "page": "src/background.html",
+        "persistent": false
+    },
+
+    "browser_action": {
+        "default_icon": "icons/Non-Newtonian-32.png",
+        "default_title": "Non-Newtonian Logos",
+        "default_popup": "popup/popup.html"
+    },
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "non-newtonian-logos@g-rman.github.io"
+        }
+    }
+}

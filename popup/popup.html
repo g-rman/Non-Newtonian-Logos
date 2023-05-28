@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Settings</title>
+</head>
+<body>
+    <main>
+        <label for="input-data-url">Data URL</label>
+        <div id="container-data-url">
+            <input type="url" name="input-data-url" id="input-data-url" />
+        </div>
+    </main>
+    <footer>
+        <section id="container-buttons">
+            <button type="button" id="btn-default">Default</button>
+            <button type="button" id="btn-apply">Apply</button>
+        </section>
+        <section id="container-error">
+            <p id="error-message"></p>
+        </section>
+    </footer>
+
+    <script type="application/javascript" src="../src/browser-polyfill.min.js"></script>
+    <script type="module" src="popup.js"></script>
+</body>
+</html>

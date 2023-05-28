@@ -1,0 +1,75 @@
+:root {
+    --background-color: #1c1b22;
+    --text-color: #dcdcdd;
+}
+
+html, body {
+    background-color: var(--background-color);
+    font-family: sans-serif;
+    margin: .5em;
+    padding: 0;
+    width: 350px;
+}
+
+main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+label {
+    color: var(--text-color);
+    display: block;
+}
+
+#container-data-url {
+    display: flex;
+    margin-right: 1em;
+}
+
+input[type="url"] {
+    flex: 1;
+}
+
+#container-error {
+    display: block;
+}
+
+#error-message {
+    color: darkred;
+    font-weight: bold;
+    text-align: center;
+}
+
+#container-buttons {
+    display: flex;
+    margin-right: 1em;
+}
+
+button[type="button"] {
+    background-color: #454545;
+    border-radius: 8px;
+    border-width: 0;
+    color: var(--text-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    touch-action: manipulation;
+    flex: 1;
+}
+
+#btn-default {
+    margin-right: .5em;
+}
+
+#btn-default {
+    margin-left: .5em;
+}
